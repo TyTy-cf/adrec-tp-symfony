@@ -16,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class SongController extends AbstractController
 {
     /**
-     * @Route("/", name="song_index", methods={"GET"})
+     * @Route("/song", name="song_index", methods={"GET"})
      */
     public function index(SongRepository $songRepository): Response
     {
@@ -26,7 +26,7 @@ class SongController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="song_new", methods={"GET","POST"})
+     * @Route("/song/new", name="song_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -49,7 +49,7 @@ class SongController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="song_show", methods={"GET"})
+     * @Route("/song/{id}", name="song_show", methods={"GET"})
      */
     public function show(Song $song): Response
     {
@@ -59,7 +59,7 @@ class SongController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="song_edit", methods={"GET","POST"})
+     * @Route("/song/{id}/edit", name="song_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Song $song): Response
     {
@@ -78,17 +78,5 @@ class SongController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="song_delete", methods={"DELETE"})
-     */
-    public function delete(Request $request, Song $song): Response
-    {
-        if ($this->isCsrfTokenValid('delete'.$song->getId(), $request->request->get('_token'))) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->remove($song);
-            $entityManager->flush();
-        }
 
-        return $this->redirectToRoute('song_index');
-    }
 }

@@ -16,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class GenreController extends AbstractController
 {
     /**
-     * @Route("/", name="genre_index", methods={"GET"})
+     * @Route("/genres", name="genre_index", methods={"GET"})
      */
     public function index(GenreRepository $genreRepository): Response
     {
@@ -26,7 +26,7 @@ class GenreController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="genre_new", methods={"GET","POST"})
+     * @Route("/genre/new", name="genre_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -49,7 +49,7 @@ class GenreController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="genre_show", methods={"GET"})
+     * @Route("/genre/{id}", name="genre_show", methods={"GET"})
      */
     public function show(Genre $genre): Response
     {
@@ -59,7 +59,7 @@ class GenreController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="genre_edit", methods={"GET","POST"})
+     * @Route("/genre/{id}/edit", name="genre_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Genre $genre): Response
     {
@@ -78,17 +78,5 @@ class GenreController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="genre_delete", methods={"DELETE"})
-     */
-    public function delete(Request $request, Genre $genre): Response
-    {
-        if ($this->isCsrfTokenValid('delete'.$genre->getId(), $request->request->get('_token'))) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->remove($genre);
-            $entityManager->flush();
-        }
 
-        return $this->redirectToRoute('genre_index');
-    }
 }

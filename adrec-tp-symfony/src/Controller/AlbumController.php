@@ -10,23 +10,25 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("/album")
- */
+
 class AlbumController extends AbstractController
 {
     /**
-     * @Route("/", name="album_index", methods={"GET"})
+     * @Route("/", name="album_index")
+     * @param AlbumRepository $albumRepository
+     * @return Response
      */
     public function index(AlbumRepository $albumRepository): Response
     {
+        $albums = $albumRepository->findAll();
+
         return $this->render('album/index.html.twig', [
-            'albums' => $albumRepository->findAll(),
+            'albums' => $albums,
         ]);
     }
 
     /**
-     * @Route("/new", name="album_new", methods={"GET","POST"})
+     * @Route("/album/new", name="album_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -49,7 +51,7 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="album_show", methods={"GET"})
+     * @Route("/album/{id}", name="album_show", methods={"GET"})
      */
     public function show(Album $album): Response
     {
@@ -59,7 +61,7 @@ class AlbumController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="album_edit", methods={"GET","POST"})
+     * @Route("/album/{id}/edit", name="album_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Album $album): Response
     {
@@ -78,17 +80,5 @@ class AlbumController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="album_delete", methods={"DELETE"})
-     */
-    public function delete(Request $request, Album $album): Response
-    {
-        if ($this->isCsrfTokenValid('delete'.$album->getId(), $request->request->get('_token'))) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->remove($album);
-            $entityManager->flush();
-        }
 
-        return $this->redirectToRoute('album_index');
-    }
 }

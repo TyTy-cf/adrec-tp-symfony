@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>{% block title %}tp symfony{% endblock %}</title>
         {% block stylesheets %}
-            {{ encore_entry_link_tags('styles') }}
+{#            {{ encore_entry_link_tags('styles') }}#}
         {% endblock %}
     </head>
     <body>
@@ -30,7 +30,7 @@
         {% include 'footer.html.twig' %}
 </div>
         {% block javascripts %}
-            {{ encore_entry_script_tags('scripts') }}
+{#            {{ encore_entry_script_tags('scripts') }}#}
         {% endblock %}
     </body>
 </html>
