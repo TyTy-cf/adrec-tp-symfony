@@ -1,79 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d86a5d16-e1ec-4c81-8b8a-d0d7932e0027" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/adrec-tp-symfony.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/.env.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/.idea/tp-symfony.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/assets/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/assets/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/assets/controllers.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/assets/controllers/hello_controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/assets/styles/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/bin/console" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/bin/phpunit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/bundles.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/assets.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/cache.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/dev/debug.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/dev/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/dev/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/doctrine_migrations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/mailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/notifier.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/prod/deprecations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/prod/doctrine.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/prod/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/prod/routing.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/prod/webpack_encore.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/routing.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/security.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/sensio_framework_extra.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/test/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/test/monolog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/test/twig.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/test/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/test/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/test/webpack_encore.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/translation.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/twig.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/validator.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/packages/webpack_encore.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/preload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/routes.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/routes/annotations.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/routes/dev/framework.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/routes/dev/web_profiler.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/config/services.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/phpunit.xml.dist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/src/Controller/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/src/Controller/HomeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/src/Entity/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/src/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/src/Repository/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/symfony.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/templates/base.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/translations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tp-symfony/yarn.lock" beforeDir="false" />
-    </list>
+    <list default="true" id="d86a5d16-e1ec-4c81-8b8a-d0d7932e0027" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +146,7 @@
       <workItem from="1611648004918" duration="42000" />
       <workItem from="1611677493783" duration="614000" />
       <workItem from="1611734866280" duration="10000" />
-      <workItem from="1612166512537" duration="1017000" />
+      <workItem from="1612166512537" duration="1426000" />
     </task>
     <servers />
   </component>
